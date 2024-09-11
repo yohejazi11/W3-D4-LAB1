@@ -22,11 +22,11 @@ for(let i=0;i<3;i++){
     li.style.color="red"
     li.style.border="1px solid black";
     li.textContent=`item  ${i}`;
-    list.appendChild(li)
+    list.appendChild(li);
 }
 
-const bodyTabe=document.getElementsByTagName('tbody');
-const ttable=document.getElementsByTagName('table');
+const bodyTabe=document.getElementsByTagName('tbody')[0];
+const ttable=document.getElementsByTagName('table')[0];
 ttable.setAttribute('class','table1');
 for(let i=0;i<2;i++){
     const row=document.createElement('tr');
@@ -35,5 +35,5 @@ for(let i=0;i<2;i++){
         td.textContent=`td nuumber ${i}`
         row.appendChild(td);
     }
-    bodyTabe.appendChild(row)
+    bodyTabe.appendChild(row);
 }
